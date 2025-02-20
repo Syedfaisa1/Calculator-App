@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+}
+:root {
+    --background: #101114;
+    --primary-color: #1c1d20;
+    --secondary-color: #647098;
+    --text-color: #f9f9f9;
+}
+
+body {
+    height: 100vh;
+    padding: 10px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.calculator {
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display {
+     display: flex;
+     justify-content: flex-end;
+     margin: 20px 0;
+}
+form .display input {
+    text-align: right;
+    align-items: center;
+    padding-right: 17px;
+    flex: 1;
+    font-size: 35px;
+}
+form input.equal {
+    width: 150px;
+}
+
+@media (max-width:600px) {
+    h1{
+        font-size: 20px;
+    }
+    body {
+        max-width: 100vh;
+        max-height: 100vh;
+    }
+}
+
+#color {
+    background-color: #FFCF50;
+}
+
+form .color {
+    background-color: #A0C878;
+}
+
+form .color2 {
+    background-color: #D17D98;
+}
